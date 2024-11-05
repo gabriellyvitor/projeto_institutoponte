@@ -1,4 +1,4 @@
-import imagem from '../../imagens/banner.png'
+import banner from '../../imagens/banner.png';
 import styled from 'styled-components';
 
 const BannerContainer = styled.div`
@@ -6,35 +6,34 @@ const BannerContainer = styled.div`
     font-size: 30px;
     text-align: center;
     position: relative;
-`
+    z-index: 0;
+`;
+
 const BannerImage = styled.img`
     width: 100%;
-`
-const PageTitle = styled.div`
-    font-family: Montserrat, sans-serif;
-    font-size: 96px;
-    font-weight: 550;
-    line-height: 117.02px;
-    text-align: left;
+`;
+
+const PageTitle = styled.img`
     position: absolute;
-    text-shadow: 0px 12px 4px #000000;
-    color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-`
+    z-index: 1;
+`;
 
 
 function Banner({titulo}) {
     return (
         <BannerContainer>
+            <PageTitle
+                src={titulo}
+            />
             <BannerImage
-                src={imagem}
+                src={banner}
                 alt='banner' 
             />
-            <PageTitle>{titulo}</PageTitle>
        </BannerContainer>
     )
 }
 
-export default Banner
+export default Banner;

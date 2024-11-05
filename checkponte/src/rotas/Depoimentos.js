@@ -1,10 +1,10 @@
-import styled from 'styled-components';
 import Banner from '../componentes/bannerContainer';
+import depoimentos from '../imagens/Depoimentos.png';
 
 function Depoimentos() {
   return (
     <div>
-      <Banner titulo="Depoimentos" />
+      <Banner titulo={depoimentos} />
     </div>
   );
 }

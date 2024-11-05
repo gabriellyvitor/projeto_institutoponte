@@ -1,10 +1,10 @@
-import styled from 'styled-components';
 import Banner from '../componentes/bannerContainer';
+import titulo from '../imagens/CheckPonte.png';
 
 function Checkponte() {
   return (
     <div>
-        <Banner titulo="CheckPonte" />
+        <Banner titulo={titulo}/>
     </div>
   );
 }

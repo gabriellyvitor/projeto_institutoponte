@@ -5,26 +5,32 @@ import { createGlobalStyle } from 'styled-components';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Checkponte from './rotas/Checkponte';
 import Depoimentos from './rotas/Depoimentos';
+import Header from './componentes/Header';
 
 const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat';
-  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Poppins', 'Roboto', 'Oxygen';
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}`;
+}
+
+li {
+    list-style: none;    
+  }
+`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <navContainer />
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Checkponte />} />
         <Route path="/Depoimentos" element={<Depoimentos />} />
