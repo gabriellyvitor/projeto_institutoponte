@@ -9,6 +9,8 @@ const NavBox = styled.div`
     width: 100%;
     height: 200px;
     opacity: 0px;
+    position: fixed;
+    top: 0;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px 0px #757575B2;
     display: flex;

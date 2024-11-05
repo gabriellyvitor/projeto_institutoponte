@@ -2,6 +2,7 @@ import banner from '../../imagens/banner.png';
 import styled from 'styled-components';
 
 const BannerContainer = styled.div`
+    margin-top: 200px;
     display: flex;
     font-size: 30px;
     text-align: center;
