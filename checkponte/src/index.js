@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Checkponte from './rotas/Checkponte';
 import Depoimentos from './rotas/Depoimentos';
 import Header from './componentes/Header';
+import Footer from './componentes/Footer';
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -35,6 +36,7 @@ root.render(
         <Route path="/" element={<Checkponte />} />
         <Route path="/Depoimentos" element={<Depoimentos />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );
