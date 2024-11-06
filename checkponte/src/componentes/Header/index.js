@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import logo from '../../imagens/logo-ip.png';
-import doe_agora from '../../imagens/doe-agora.png';
-import icon_header from '../../imagens/icon-header.png';
-import premios from '../../imagens/premios.png';
+import logo from '../../imagens/header/logo-ip.png';
+import doe_agora from '../../imagens/header/doe-agora.png';
+import icon_header from '../../imagens/header/icon-header.png';
+import premios from '../../imagens/header/premios.png';
 import OpcoesHeader from '../opcoesHeader';
 
 const NavBox = styled.div`

@@ -1,5 +1,6 @@
 import banner from '../../imagens/banner.png';
 import styled from 'styled-components';
+import titulo from '../../imagens/CheckPonte.png';
 
 const BannerContainer = styled.div`
     margin-top: 200px;
@@ -8,6 +9,7 @@ const BannerContainer = styled.div`
     text-align: center;
     position: relative;
     z-index: 0;
+    box-shadow: 0px 8px 8px 0px #757575B2;
 `;
 
 const BannerImage = styled.img`
@@ -23,7 +25,7 @@ const PageTitle = styled.img`
 `;
 
 
-function Banner({titulo}) {
+function Banner() {
     return (
         <BannerContainer>
             <PageTitle

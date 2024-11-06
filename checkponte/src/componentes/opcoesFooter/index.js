@@ -1,13 +1,22 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import TextoCorpo from '../textoCorpo';
 
 const OpcoesContainer = styled.div`
-    display: table;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    /*
+    margin-left: 250px;
+    margin-right: 250px;
+    */
+    margin-left: 17%;
+    width: 60%;
 `
 
 const Opcao = styled.li`
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', Arial, Tahoma, sans-serif;
     font-size: 18px;
     font-weight: 800;
     color: #797FBB;
@@ -20,7 +29,7 @@ const Opcao = styled.li`
 `;
 
 const OpcaoMenor = styled.p`
-font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
     font-style: italic;
@@ -36,6 +45,7 @@ const Opcoes = styled.ul`
     text-align: center;
     display: table-row;
     justify-content: center;
+    padding-bottom: 40px;
 `;
 
 const textoOpcoes = ['CONTATO', 'OUVIDORIA', 'INFORMAÇÕES', 'ASSESSORIA DE IMPRENSA', 'TRABALHE CONOSCO', 'POLÍTICA DE COOKIES E PRIVACIDADE'];
@@ -61,6 +71,11 @@ function OpcoesFooter() {
                     }
                 } ) }
             </Opcoes>
+            <address>
+                <TextoCorpo tamanho='19px'>
+                    Av. Fernando Ferrari, 1080, Torre Central, sala 604, Mata da Praia, Vitória/ES, 29066-380 | CNPJ: 21.181.264/0001-69
+                </TextoCorpo>
+            </address>
         </OpcoesContainer>
     )
 }

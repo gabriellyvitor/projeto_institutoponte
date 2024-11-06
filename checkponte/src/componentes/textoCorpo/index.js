@@ -6,3 +6,5 @@ const TextoCorpo = styled.p`
     font-weight: ${props => props.peso || '400'};
     color: ${props => props.cor || '#637285'};
 `
+
+export default TextoCorpo;
