@@ -7,17 +7,14 @@ const OpcoesContainer = styled.div`
     flex-direction: column;
     text-align: center;
     padding-top: 20px;
-    /*
-    margin-left: 250px;
-    margin-right: 250px;
-    */
     margin-left: 17%;
+    justify-content: center;
     width: 60%;
 `
 
 const Opcao = styled.li`
     font-family: 'Montserrat', Arial, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 800;
     color: #797FBB;
     display: table-cell;
@@ -30,7 +27,7 @@ const Opcao = styled.li`
 
 const OpcaoMenor = styled.p`
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 700;
     font-style: italic;
 `
@@ -45,7 +42,6 @@ const Opcoes = styled.ul`
     text-align: center;
     display: table-row;
     justify-content: center;
-    padding-bottom: 40px;
 `;
 
 const textoOpcoes = ['CONTATO', 'OUVIDORIA', 'INFORMAÇÕES', 'ASSESSORIA DE IMPRENSA', 'TRABALHE CONOSCO', 'POLÍTICA DE COOKIES E PRIVACIDADE'];
@@ -72,7 +68,7 @@ function OpcoesFooter() {
                 } ) }
             </Opcoes>
             <address>
-                <TextoCorpo tamanho='19px'>
+                <TextoCorpo tamanho='14px'>
                     Av. Fernando Ferrari, 1080, Torre Central, sala 604, Mata da Praia, Vitória/ES, 29066-380 | CNPJ: 21.181.264/0001-69
                 </TextoCorpo>
             </address>

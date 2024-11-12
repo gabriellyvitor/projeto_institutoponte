@@ -2,18 +2,18 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Opcao = styled.li`
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-family: 'Montserrat', Arial, Tahoma, sans-serif;
+    font-size: 13px;
     font-weight: 700;
     color: #797FBB;
     display: flex;
+    padding: 10px 10px 0 10px;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
     height: 100%;
-    padding: 0 5px;
     cursor: pointer;
-    min-width: 120px;
+    min-width: 75px;
 `;
 
 const StyledLink = styled(Link)`
@@ -22,6 +22,8 @@ const StyledLink = styled(Link)`
 
 const Opcoes = styled.ul`
     display: flex;
+    margin: 0;
+    padding: 0;
 `;
 
 const textoOpcoes = ['HOME', 'COMO ATUAMOS', 'SELEÇÃO DE ALUNOS', 'PARCEIROS', 'CONTRIBUA', 'NOTÍCIAS'];

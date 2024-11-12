@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import titulo from '../../imagens/CheckPonte.png';
 
 const BannerContainer = styled.div`
-    margin-top: 200px;
+    margin-top: 110px;
     display: flex;
     font-size: 30px;
     text-align: center;

@@ -6,10 +6,10 @@ import resultate from '../../imagens/footer/resultate.png';
 
 const FooterBox = styled.footer`
     width: 100%;
-    height: 350px;
     background: #e8cf40;
     display: flex;
     grid-template: "div div";
+    padding: 20px;
 `;
 
 const IconsFooter = styled.div`
@@ -18,7 +18,6 @@ const IconsFooter = styled.div`
     flex-direction: column;
     width: 23%;
     align-items: center;
-    padding-top: 50px;
 `;
 
 const IconSelo = styled.img`

@@ -10,9 +10,10 @@ import Footer from './componentes/Footer';
 const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Poppins', 'Roboto', 'Oxygen';
+  font-family: -apple-system, BlinkMacSystemFont, 'GothamPro', 'Montserrat', 'Poppins', 'Roboto', 'Oxygen';
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 code {

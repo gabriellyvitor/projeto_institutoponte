@@ -7,34 +7,36 @@ import OpcoesHeader from '../opcoesHeader';
 
 const NavBox = styled.div`
     width: 100%;
-    height: 200px;
-    opacity: 0px;
+    height: 110px;
     position: fixed;
     top: 0;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px 0px #757575B2;
     display: flex;
     justify-content: space-around;
-    padding: 0 20px;
     z-index: 1;
 `
 
 const Logo = styled.img`
     opacity: 0px;
-    transform: translateY(33px);
+    width: 135px;
+    height: 117px;
+    vertical-align: middle;
+    margin: 20px 0 0 0;
     z-index: 2;
 `
 
 const DoeAgora = styled.img`
     opacity: 0px;
-    transform: translateY(60px);   
+    width: 130px;
+    height: 130px;  
+    margin: 20px 0 0 0; 
     z-index: 2;
 `
 
 const PremiosImg = styled.img`
-    padding: 20px;
-    opacity: 0px;
-    transform: translateY(35px);
+    width: 258px;
+    height: 260px;
     z-index: 2;
 `
 
