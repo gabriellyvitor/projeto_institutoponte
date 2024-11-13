@@ -16,6 +16,32 @@ const Container = styled.section`
     align-items: center;
 `;
 
+const DivConteudo = styled.div`
+    margin: 10px 30px 10px 30px;
+    float: left;
+`
+
+const ImagemFaculdade = styled.img`
+    width: ${props => props.largura || '600px'};
+    height: ${props => props.altura || '338px'};
+    float: ${props => props.lado || 'left'};
+    top: 7px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 15px 20px 15px 20px;
+`
+
+const TextoParagrafo = styled.p`
+    font-family: 'Montserrat', sans-serif;
+    font-size: ${props => props.tamanho || '30px'};
+    font-weight: ${props => props.peso || '400'};
+    color: ${props => props.cor || '#637285'};
+    padding: ${props => props.espacamento || '0'};
+    text-align: ${props => props.alinhamento || 'left'};
+    display: flex;
+    align-items: center;
+`
+
 const CustomDropdownButton = styled(DropdownButton)`
     background-color: white; /* Cor de fundo do botão */
     border-radius: 5px; /* Arredondamento das bordas */
@@ -58,8 +84,22 @@ function FaculdadesContainer({ visibilidadeFaculdades }) {
                     <Dropdown.Item onClick={() => escolherItem(escolha)}>{escolha}</Dropdown.Item>    
                 )) }
             </CustomDropdownButton>
-            { escolhido != 'Escolha uma Faculdade' ? <TextoCorpo>{faculdadesJson[escolhido]["Texto1"]}</TextoCorpo> : null}
-            { escolhido != 'Escolha uma Faculdade' ? <TextoCorpo>{faculdadesJson[escolhido]["Texto2"]}</TextoCorpo> : null}
+            { escolhido != 'Escolha uma Faculdade' ? 
+            <div>
+                <DivConteudo>
+                    <TextoParagrafo>
+                        <ImagemFaculdade src={faculdadesJson[escolhido]["Imagem1"]} />
+                        {faculdadesJson[escolhido]["Texto1"]}
+                    </TextoParagrafo>
+                </DivConteudo>
+                <DivConteudo>
+                    <TextoParagrafo>
+                        {faculdadesJson[escolhido]["Texto2"]}
+                        <ImagemFaculdade src={faculdadesJson[escolhido]["Imagem2"]} lado='right'/>
+                    </TextoParagrafo>
+                </DivConteudo>
+            </div>
+             : null}
             
         </Container>
     );
