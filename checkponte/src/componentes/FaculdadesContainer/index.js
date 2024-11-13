@@ -32,13 +32,14 @@ const ImagemFaculdade = styled.img`
 
 const TextoParagrafo = styled.p`
     font-family: 'Montserrat', sans-serif;
-    font-size: ${props => props.tamanho || '30px'};
+    font-size: ${props => props.tamanho || '28px'};
     font-weight: ${props => props.peso || '400'};
     color: ${props => props.cor || '#637285'};
     padding: ${props => props.espacamento || '0'};
     text-align: ${props => props.alinhamento || 'left'};
     display: flex;
     align-items: center;
+    white-space: pre-wrap;
 `
 
 const CustomDropdownButton = styled(DropdownButton)`
