@@ -5,7 +5,6 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import { useState } from 'react';
 import escolhasJson from './escolhas.json';
 import faculdadesJson from './faculdades.json';
-import TextoCorpo from '../textoCorpo';
 
 const Container = styled.section`
     width: 100%;
