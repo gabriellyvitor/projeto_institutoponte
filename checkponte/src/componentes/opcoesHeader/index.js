@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const Opcao = styled.li`
     font-family: 'Montserrat', Arial, Tahoma, sans-serif;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 800;
     color: #797FBB;
     display: flex;
     padding: 10px 10px 0 10px;
@@ -16,7 +15,7 @@ const Opcao = styled.li`
     min-width: 75px;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
     text-decoration: none;
 `;
 

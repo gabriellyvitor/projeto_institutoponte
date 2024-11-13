@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle } from 'styled-components';
-import { BrowserRouter } from 'react-router-dom';
 import Checkponte from './Checkponte';
 import Header from './componentes/Header';
 import Footer from './componentes/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -30,11 +30,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <BrowserRouter>
-      <Header />
-      <Checkponte />
-      <Footer />
-    </BrowserRouter>
+    <Header />
+    <Checkponte />
+    <Footer />
   </React.StrictMode>
 );
 

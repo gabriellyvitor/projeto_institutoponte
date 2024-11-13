@@ -1,34 +1,44 @@
 import Banner from './componentes/bannerContainer';
 import styled from 'styled-components';
 import CheckListContainer from './componentes/CheckListContainer';
-
-const ButtonsContainer = styled.section`
-  width: 100%;
-  height: 300px;
-  background-color: white;
-`;
-
-const FaculContainer = styled.section`
-  height: 300px;
-  width: 100%;
-  background-color: #AAEE9C;
-`;
-
-const DepoimentosContainer = styled.section`
-  height: 300px;
-  width: 100%;
-  background-color: #f55d67;
-`;
+import DepoimentosContainer from './componentes/DepoimentosContainer';
+import FaculdadesContainer from './componentes/FaculdadesContainer';
+import SecoesContainer from './componentes/SecoesContainer';
+import { useState } from 'react';
 
 function Checkponte() {
+  const [secaoAtual, setSecaoAtual] = useState('Faculdades');
+  const [visibilidadeFaculdades, setVisibilidadeFaculdades] = useState('flex')
+  const [visibilidadeDepoimentos, setVisibilidadeDepoimentos] = useState('none')
+
+  function mudarSecaoFaculdades() {
+      setSecaoAtual('Faculdades');
+      setVisibilidadeFaculdades('flex');
+      setVisibilidadeDepoimentos('none');
+    }
+    
+    function mudarSecaoDepoimentos() {
+      setSecaoAtual('Depoimentos');
+      setVisibilidadeFaculdades('none');
+      setVisibilidadeDepoimentos('flex');
+  }
+
   return (
-    <body>
+    <div>
         <Banner />
-        <ButtonsContainer />
-        <FaculContainer />
-        <DepoimentosContainer />
+        <SecoesContainer 
+            secaoAtual={secaoAtual}
+            mudarSecaoFaculdades={mudarSecaoFaculdades}
+            mudarSecaoDepoimentos={mudarSecaoDepoimentos}
+        />
+        <FaculdadesContainer 
+          visibilidadeFaculdades={visibilidadeFaculdades}
+        />
+        <DepoimentosContainer 
+          visibilidadeDepoimentos={visibilidadeDepoimentos}
+        />
         <CheckListContainer />
-    </body>
+    </div>
   );
 }
 

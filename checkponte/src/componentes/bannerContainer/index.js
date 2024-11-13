@@ -2,7 +2,8 @@ import banner from '../../imagens/banner.png';
 import styled from 'styled-components';
 import titulo from '../../imagens/CheckPonte.png';
 
-const BannerContainer = styled.div`
+const BannerContainer = styled.section`
+    width: 100%;
     margin-top: 110px;
     display: flex;
     font-size: 30px;
@@ -35,7 +36,7 @@ function Banner() {
                 src={banner}
                 alt='banner' 
             />
-       </BannerContainer>
+        </BannerContainer>
     )
 }
 

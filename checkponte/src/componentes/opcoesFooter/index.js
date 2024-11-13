@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import TextoCorpo from '../textoCorpo';
 
 const OpcoesContainer = styled.div`
@@ -32,7 +31,7 @@ const OpcaoMenor = styled.p`
     font-style: italic;
 `
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
     text-decoration: none;
 `;
 
